@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>replit</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+    <body>
+		<canvas></canvas>
+
+		<div id = "options">
+			<div class = "opt" id = "sma">
+				<input type = "range" min = "0.2" max = "10" step = "0.1" value = "1">
+				<p style = "margin-left: 0; margin-right: auto;">Semi-major Axis: 1</p>
+			</div>
+			<div class = "opt" id = "ecc">
+				<input type = "range" min = "0" max = "0.99" step = "0.01" value = "0">
+				<p style = "margin-left: 0; margin-right: auto;">Eccentricity: 0</p>
+			</div>
+			<div class = "opt" id = "aop">
+				<input type = "range" min = "0" max = "360" step = "1" value = "0">
+				<p style = "margin-left: 0; margin-right: auto;">Argument of Periapsis: 0</p>
+			</div>
+			<div class = "opt" id = "ta">
+				<input type = "range" min = "0" max = "360" step = "1" value = "0"> 
+				<p style = "margin-left: 0; margin-right: auto;">True Anomaly: 0</p>
+			</div>
+		</div>
+		<button id = "ss">Start</button>
+		
+		<script src = "calc.js"></script>
+		<script src = "script.js"></script>
+	</body>
+</html>
